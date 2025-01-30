@@ -223,7 +223,7 @@ nav{
 .program-card .program-img {
     width: 100%;
     height: 200px; /* Tetapkan tinggi yang sama */
-    object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+    object-fit: contain; /* Pastikan gambar tidak terdistorsi */
 }
 
 /* Menyamakan tinggi teks dalam card */
