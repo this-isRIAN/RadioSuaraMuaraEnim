@@ -198,3 +198,7 @@ nav{
     object-fit: cover;
     max-height: 300px;
 }
+.program-card{
+    margin: auto;
+    padding: 12%;
+}
