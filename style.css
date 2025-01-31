@@ -221,9 +221,9 @@ nav{
 
 /* Pastikan gambar dalam program memiliki ukuran yang sama */
 .program-card .program-img {
-    width: 50px;
-    height: 150px; /* Tetapkan tinggi yang sama */
-    object-fit: contain; /* Pastikan gambar tidak terdistorsi */
+    /* width: 50px;
+    height: 150px; 
+    object-fit: contain;  */
 }
 
 /* Menyamakan tinggi teks dalam card */
