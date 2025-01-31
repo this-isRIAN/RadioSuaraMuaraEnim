@@ -7,9 +7,7 @@ body{
     padding-top: 56px;
     
 }
-.container {
-    margin-top: 0px;
-}
+
 @keyframes fadeInOut {
     0% {
         opacity: 0;
@@ -51,22 +49,23 @@ body{
     animation: slideInOut 7s ease-in-out infinite;
 }
 .display-6, .display-1, .display-3 {
-    font-family: "Baskervville SC", serif; /* Ganti 'YourFontFamily' dengan nama font yang inginkan*/
-    font-size: 2.5rem; /* Atur ukuran font sesuai kebutuhan */
+    font-family: "Baskervville SC", serif; 
+    font-size: 2.5rem; 
   }
   
   .display-1 {
-    font-size: 4rem; /* ukuran khusus untuk display-1 */
+    font-size: 4rem; 
   }
   
   .display-3 {
-    font-size: 3rem; /* ukuran khusus untuk display-3 */
+    font-size: 3rem; 
   }
 
 img{
     width: 50px; 
     height: 150px; 
     object-fit: contain;
+    
 }
 .penyiar-section {
     background-image: url('img/23.png');
@@ -92,13 +91,30 @@ nav{
     position: -webkit-sticky;
     top: 0;
     background: #FFFFFF;
+    
 }
 .navbar{
     margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 5px;   
+    padding-bottom: 5px;
 }
-/* Container untuk album foto prestasi */
+.navbar .container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+  }
+  
+.navbar-brand img {
+    width: 250px; 
+    height: auto;
+    display: block;
+    margin: 0; 
+}
+  
+.navbar-nav .nav-link {
+    padding: 5px 10px; 
+}
+
 .album-prestasi {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -106,7 +122,7 @@ nav{
     padding: 20px;
 }
 
-/* Style untuk setiap foto prestasi */
+
 .album-prestasi .prestasi-item {
     overflow: hidden;
     border-radius: 10px;
@@ -134,7 +150,7 @@ nav{
     text-align: center;
     background-color: #f8f9fa;
 }
-/* Efek Hover untuk Program dan Penyiar */
+
 .program-card, .penyiar-card {
     overflow: hidden;
     border-radius: 10px;
@@ -161,7 +177,7 @@ nav{
     color: #fff;
 }
 .container-fluid.banner{
-    padding-top: 50px;
+    padding-top: 120px;
 }
 .banner{
     background : url('img/BG\ BG.jpg') no-repeat center center;
@@ -199,44 +215,54 @@ nav{
     max-height: 300px;
 }
 
-/* Menyamakan tinggi setiap program-card */
+
 .program-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    min-height: 480px; /* Tambah tinggi agar konten muat */
-    padding: 20px; /* Tambahkan padding agar lebih rapi */
-    margin-bottom: 20px; /* Jarak antar card */
+    min-height: 480px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
 }
 
-/* Pastikan .card-body mengisi ruang kosong agar teks tidak mempengaruhi tinggi */
+
 .program-card .card-body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center; /* Agar teks rapi */
+    text-align: center; 
 }
 
-/* Pastikan gambar dalam program memiliki ukuran yang sama */
-.program-card .program-img {
-    /* width: 50px;
-    height: 150px; 
-    object-fit: contain;  */
+
+.program-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
 }
 
-/* Menyamakan tinggi teks dalam card */
+.program-card img {
+    width: auto;
+    max-width: 100%; 
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+
 .program-card .card-text {
     flex-grow: 1;
     display: flex;
-    align-items: center; /* Teks rata tengah */
+    align-items: center;
     justify-content: center;
     text-align: center;
     padding: 10px;
 }
 
-/* Buat kolom tetap sejajar dalam Grid */
+
 .program-container .row {
     display: flex;
     flex-wrap: wrap;
@@ -246,3 +272,26 @@ nav{
 .program-container .col-md-6 {
     display: flex;
 }
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 0px;
+}
+  
+.image-wrapper {
+    width: 100%; 
+    max-height: 200px; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.image-wrapper img {
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
